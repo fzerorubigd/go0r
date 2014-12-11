@@ -1,7 +1,7 @@
 
 # Simple ssh honypot in Golang
 
-A simple, around 100 line of code, ssh honypot written in golang.
+A simple, around 100 line of code, ssh honeypot written in golang.
 
 ## The name
 Its base on persian proverb "گریه کردن بر روی گور بدون مرده " (cry over the empty grave) and the word goor (گور means the Grave in persian).
