@@ -1,0 +1,23 @@
+{
+    "paths": [
+        "."
+    ],
+    "depth": 2,
+    "exclude": [],
+    "include": [
+        "\\.(go|py|php|java|cpp|h|rb)$"
+    ],
+    "command": [
+        "bash",
+        "-c",
+        "go build && ./cenotaph"
+    ],
+    "env": {
+        "POWERD_BY": "github.com/codeskyblue/fswatch",
+	"PORT" : ":3232",
+	"HOST_KEY" : "./host_key"
+    },
+    "autorestart": true,
+    "restart-interval": 0,
+    "kill-signal": "KILL"
+}
