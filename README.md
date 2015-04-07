@@ -7,7 +7,7 @@ A simple, around 100 line of code, ssh honeypot written in golang.
 Its base on persian proverb "گریه کردن بر روی گور بدون مرده " (cry over the empty grave) and the word goor (گور means the Grave in persian).
 
 ## How to use it
-This is the steps :
+This is the (wrong) steps :
 
 ```bash
 go get -u -v github.com/fzerorubigd/go0r
@@ -24,4 +24,8 @@ $GOPATH/bin/go0r
 ```
 
 And then try to login into ssh server on "port" and watch the output :)
-Also, you can use PORT , HOST_KEY environment variables to set the config values.
+Also, you can use GOOR_PORT , GOOR_HOST_KEY environment variables to set the config values.
+
+## Note
+Running this as root is dangerous. run it as nobody, on some port > 1024, then use iptable to redirect traffic from 
+port 22 to this app port.

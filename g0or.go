@@ -56,10 +56,10 @@ func init() {
 	viper.AddConfigPath(usr.HomeDir + "/" + appName)
 	viper.AddConfigPath(dir + "/configs/")
 
-	viper.BindEnv("port", "PORT")
+	viper.BindEnv("port", "GOOR_PORT")
 	viper.SetDefault("port", ":22")
 
-	viper.BindEnv("host_key", "HOST_KEY")
+	viper.BindEnv("host_key", "GOOR_HOST_KEY")
 	viper.SetDefault("host_key", "./host_key")
 
 	if err := viper.ReadInConfig(); err != nil {
